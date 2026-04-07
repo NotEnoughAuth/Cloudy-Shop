@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloudy Shop — Head in the Clouds, Feet on the Ground</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="#">
+        <span class="logo-icon">☁️</span> Cloudy Shop
+      </a>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#deals">Deals</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">
+        🛒 <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge">☁️ Now 99.999% Uptime Guaranteed*</span>
+        <h1>Your Head's in the Clouds.<br />So Is Our Infrastructure.</h1>
+        <p class="tagline">
+          Welcome to <strong>Cloudy Shop</strong> — where every purchase comes
+          with a silver lining, unlimited scalability, and at least three jokes
+          about microservices. We put the "cumulus" in "cumulative savings."
+        </p>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-primary">Browse the Cloud ☁️</a>
+          <a href="#deals" class="btn btn-secondary">Today's Forecast 🌦️</a>
+        </div>
+        <small class="disclaimer">* Uptime guaranteed in at least one availability zone at all times.</small>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="cloud-big">☁️</div>
+        <div class="cloud-med">☁️</div>
+        <div class="cloud-sm">☁️</div>
+        <div class="hero-badge">🌩️ Lightning Deals</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>☁️ Infinite Scale</span>
+      <span>⚡ Serverless Wonders</span>
+      <span>🌩️ Lightning Fast Delivery</span>
+      <span>💧 Drip Pricing — Pay for What You Use</span>
+      <span>🌐 Multi-Region Redundancy</span>
+      <span>🔒 Zero-Trust Checkout</span>
+      <span>☀️ 99.999% Uptime</span>
+      <span>☁️ Infinite Scale</span>
+      <span>⚡ Serverless Wonders</span>
+      <span>🌩️ Lightning Fast Delivery</span>
+      <span>💧 Drip Pricing — Pay for What You Use</span>
+      <span>🌐 Multi-Region Redundancy</span>
+      <span>🔒 Zero-Trust Checkout</span>
+      <span>☀️ 99.999% Uptime</span>
+    </div>
+  </div>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="section products" id="products">
+    <div class="container">
+      <h2 class="section-title">Our Cloud Offerings ☁️</h2>
+      <p class="section-sub">
+        From cumulus to cumulonimbus — we've got a plan for every altitude.
+      </p>
+
+      <div class="product-grid" id="productGrid">
+
+        <!-- Product cards are rendered by JS -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEALS ===== -->
+  <section class="section deals" id="deals">
+    <div class="container">
+      <h2 class="section-title">Today's Forecast 🌦️</h2>
+      <p class="section-sub">Lightning deals that strike fast — and disappear even faster.</p>
+      <div class="deals-grid">
+
+        <div class="deal-card">
+          <span class="deal-badge">🌩️ Flash Sale</span>
+          <h3>Serverless Starter Kit</h3>
+          <p>For developers who want the benefits of a server without the responsibility of one. "It's not a bug, it's a cold start."</p>
+          <div class="deal-price">
+            <span class="original">$49.99</span>
+            <span class="sale">$24.99</span>
+          </div>
+          <button class="btn btn-primary add-to-cart-deal" data-name="Serverless Starter Kit" data-price="24.99">Add to Cart 🛒</button>
+        </div>
+
+        <div class="deal-card featured-deal">
+          <span class="deal-badge">⭐ Best Seller</span>
+          <h3>Infinite Loop T-Shirt</h3>
+          <p>A shirt so comfortable you'll wear it forever. Warning: may cause recursive laundry cycles. 100% organic cotton.</p>
+          <div class="deal-price">
+            <span class="original">$29.99</span>
+            <span class="sale">$19.99</span>
+          </div>
+          <button class="btn btn-primary add-to-cart-deal" data-name="Infinite Loop T-Shirt" data-price="19.99">Add to Cart 🛒</button>
+        </div>
+
+        <div class="deal-card">
+          <span class="deal-badge">💧 Drip Deal</span>
+          <h3>Cloud Journal (Notebook)</h3>
+          <p>Write your thoughts in the cloud — the analogue kind. 200 pages of distributed thinking, no replication lag.</p>
+          <div class="deal-price">
+            <span class="original">$14.99</span>
+            <span class="sale">$9.99</span>
+          </div>
+          <button class="btn btn-primary add-to-cart-deal" data-name="Cloud Journal" data-price="9.99">Add to Cart 🛒</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>About Cloudy Shop ☁️</h2>
+        <p>
+          Cloudy Shop was founded on a simple premise: what if a store had the
+          reliability of a well-architected cloud system, but also sold cool stuff?
+          We auto-scale our inventory, geo-replicate our warehouses, and deploy our
+          shipping labels via a fully automated CI/CD pipeline.
+        </p>
+        <p>
+          Our team is fully distributed (across three continents and two couch
+          cushions), and we practice extreme agility — our stand-ups happen while
+          actually standing up. We believe in <strong>eventual consistency</strong>:
+          eventually, you will be happy with your purchase. Guaranteed.
+        </p>
+        <p>
+          Our tech stack is powered by the spirit of the cloud: elastic, ephemeral,
+          and occasionally inexplicably unavailable for 30 seconds before coming back
+          as if nothing happened.
+        </p>
+        <blockquote>
+          "Every silver lining has a cloud." — Our CEO, probably.
+        </blockquote>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">99.999%</span>
+          <span class="stat-label">Uptime*</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Scalability</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Cloud Regions</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Regrets</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say ⭐</h2>
+      <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+          <p>"I bought the Cumulus Mug and my coffee has never felt more highly available. Two thumbs up!"</p>
+          <div class="tester">— <strong>@CloudNative_Chad</strong></div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"The Serverless Socks are incredible. I don't have to manage any threads at all. 10/10 would provision again."</p>
+          <div class="tester">— <strong>@DevOps_Deb</strong></div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"Arrived in 3 days. Horizontally scalable packaging. No vendor lock-in. I'm staying with Cloudy Shop forever."</p>
+          <div class="tester">— <strong>@k8s_Kevin</strong></div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>"I accidentally ordered twice due to an idempotency failure on my end. They shipped both. Billed once. Heroes."</p>
+          <div class="tester">— <strong>@Eventual_Ellie</strong></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <h2>Reach Out to Our Cloud ☁️</h2>
+      <p>
+        Our support team is geo-redundantly available across multiple time zones.
+        Response time: O(log n) where n = number of tickets. Submit yours below.
+      </p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your Name (or username)" required />
+        <input type="email" placeholder="Your Email (no SPF hard fail)" required />
+        <textarea rows="4" placeholder="Describe your issue (stack traces welcome)"></textarea>
+        <button type="submit" class="btn btn-primary">Send to the Cloud 📤</button>
+      </form>
+      <div id="contactMsg" class="contact-msg hidden"></div>
+    </div>
+  </section>
+
+  <!-- ===== CART MODAL ===== -->
+  <div class="modal-overlay hidden" id="cartModal">
+    <div class="modal">
+      <button class="modal-close" id="closeCart">✕</button>
+      <h2>🛒 Your Cloud Cart</h2>
+      <div id="cartItems">
+        <p class="empty-cart">Your cart is emptier than a cold-started Lambda. Add something!</p>
+      </div>
+      <div class="cart-total" id="cartTotal"></div>
+      <button class="btn btn-primary full-width" id="checkoutBtn">Checkout &amp; Deploy 🚀</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">☁️</span>
+        <strong>Cloudy Shop</strong>
+        <p>Where every product has a silver lining.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <a href="#products">Products</a>
+        <a href="#deals">Deals</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal Cloud</h4>
+        <a href="#">Terms of Service (v2.3.1)</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Notice</a>
+        <a href="#">SLA (99.999%*)</a>
+      </div>
+      <div class="footer-links">
+        <h4>Cloud Status</h4>
+        <a href="#">☀️ All Systems Operational</a>
+        <a href="#">📡 Incident History</a>
+        <a href="#">🌩️ Scheduled Maintenance</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Cloudy Shop Inc. — "We're not in the cloud business, we're in the business of cloud." | Built with ☁️ and excessive YAML</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

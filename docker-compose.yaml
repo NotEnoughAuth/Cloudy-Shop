@@ -1,0 +1,19 @@
+services:
+  cloudy-shop:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cloudy-shop:latest
+    container_name: cloudy-shop
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    labels:
+      - "com.cloudyshop.description=Cloudy Shop — Where every product has a silver lining"
+      - "com.cloudyshop.version=1.0.0"
