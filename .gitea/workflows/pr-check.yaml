@@ -1,0 +1,22 @@
+name: Pull Request Check
+
+# Trigger the workflow on pull request events
+on:
+  pull_request:
+    # Optional: specify activity types (opened and synchronize are defaults)
+    types: [opened, synchronize, reopened]
+    # Optional: only trigger if the PR targets specific branches
+    branches:
+      - main
+
+jobs:
+  test-on-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Run Tests
+        run: |
+          echo "Running tests for Pull Request #${{ github.event.pull_request.number }}"
+          # Add your actual test commands here (e.g., npm test, pytest)
